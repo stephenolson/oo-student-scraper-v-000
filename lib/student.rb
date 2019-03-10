@@ -16,7 +16,7 @@ class Student
         end
       end
 
-      def add_student_attributes
+      def add_student_attributes(attributes_hash)
         attributes_hash.each { |key, value| send("#{key}=", value) }
         @@all << self
         self
